@@ -11,7 +11,7 @@
             <Label Foreground="Black" Content="Title: " Margin="5" />
             <TextBox Text="{Binding Commmand.Title}" Width="300" />
         </StackPanel>
-            <Button Content="Save" />
+            <Button Width="50" Content="Save" />
         </StackPanel>
 
     </Grid>
