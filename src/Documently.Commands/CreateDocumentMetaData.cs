@@ -12,7 +12,7 @@ namespace Documently.Commands
 			AggregateId = arId;
 		}
 
-		public string Title { get; protected set; }
+		public string Title { get; set; }
 		public DateTime UtcTime { get; protected set; }
 		
 		public Guid AggregateId { get; set; }
