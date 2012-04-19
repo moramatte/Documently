@@ -1,0 +1,46 @@
+﻿<UserControl x:Class="Documently.WpfClient.Shared.VirtualKeyboard"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:Shared="clr-namespace:Documently.WpfClient.Shared" xmlns:System="clr-namespace:System;assembly=mscorlib" mc:Ignorable="d" 
+             d:DesignHeight="600" d:DesignWidth="800">
+    <UserControl.Resources>
+        <System:Double x:Key="keyWidth">50</System:Double>
+        <System:Double x:Key="keyHeight">50</System:Double>
+    </UserControl.Resources>
+    <Controls:StackPanel xmlns:Controls="clr-namespace:System.Windows.Controls;assembly=PresentationFramework">
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+            <Shared:FlippingKey Text="Q" Width="{StaticResource keyWidth}" Height="{StaticResource keyHeight}" />
+            <Shared:FlippingKey Text="W" Width="{StaticResource keyWidth}" Height="{StaticResource keyHeight}"/>
+            <Shared:FlippingKey Text="E" Width="{StaticResource keyWidth}" Height="{StaticResource keyHeight}"/>
+            <Shared:FlippingKey Text="R" Width="{StaticResource keyWidth}" Height="{StaticResource keyHeight}"/>
+            <Shared:FlippingKey Text="T" Width="{StaticResource keyWidth}" Height="{StaticResource keyHeight}"/>
+            <Shared:FlippingKey Text="Y" Width="{StaticResource keyWidth}" Height="{StaticResource keyHeight}"/>
+            <Shared:FlippingKey Text="U" Width="{StaticResource keyWidth}" Height="{StaticResource keyHeight}"/>
+            <Shared:FlippingKey Text="I" Width="{StaticResource keyWidth}" Height="{StaticResource keyHeight}"/>
+            <Shared:FlippingKey Text="O" Width="{StaticResource keyWidth}" Height="{StaticResource keyHeight}"/>
+            <Shared:FlippingKey Text="P" Width="{StaticResource keyWidth}" Height="{StaticResource keyHeight}"/>           
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+            <Shared:FlippingKey Text="A" Width="{StaticResource keyWidth}" Height="{StaticResource keyHeight}" Margin="0 -20 0 0"/>
+            <Shared:FlippingKey Text="S" Width="{StaticResource keyWidth}" Height="{StaticResource keyHeight}" Margin="0 -20 0 0"/>
+            <Shared:FlippingKey Text="D" Width="{StaticResource keyWidth}" Height="{StaticResource keyHeight}" Margin="0 -20 0 0"/>
+            <Shared:FlippingKey Text="F" Width="{StaticResource keyWidth}" Height="{StaticResource keyHeight}" Margin="0 -20 0 0"/>
+            <Shared:FlippingKey Text="G" Width="{StaticResource keyWidth}" Height="{StaticResource keyHeight}" Margin="0 -20 0 0"/>
+            <Shared:FlippingKey Text="H" Width="{StaticResource keyWidth}" Height="{StaticResource keyHeight}" Margin="0 -20 0 0"/>
+            <Shared:FlippingKey Text="J" Width="{StaticResource keyWidth}" Height="{StaticResource keyHeight}" Margin="0 -20 0 0"/>
+            <Shared:FlippingKey Text="k" Width="{StaticResource keyWidth}" Height="{StaticResource keyHeight}" Margin="0 -20 0 0"/>
+            <Shared:FlippingKey Text="L" Width="{StaticResource keyWidth}" Height="{StaticResource keyHeight}" Margin="0 -20 0 0"/>
+           </StackPanel>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+            <Shared:FlippingKey Text="Z" Width="{StaticResource keyWidth}" Height="{StaticResource keyHeight}" Margin="0 -20 0 0"/>
+            <Shared:FlippingKey Text="C" Width="{StaticResource keyWidth}" Height="{StaticResource keyHeight}" Margin="0 -20 0 0"/>
+            <Shared:FlippingKey Text="V" Width="{StaticResource keyWidth}" Height="{StaticResource keyHeight}" Margin="0 -20 0 0"/>
+            <Shared:FlippingKey Text="B" Width="{StaticResource keyWidth}" Height="{StaticResource keyHeight}" Margin="0 -20 0 0"/>
+            <Shared:FlippingKey Text="N" Width="{StaticResource keyWidth}" Height="{StaticResource keyHeight}" Margin="0 -20 0 0"/>
+            <Shared:FlippingKey Text="M" Width="{StaticResource keyWidth}" Height="{StaticResource keyHeight}" Margin="0 -20 0 0"/>
+        </StackPanel>
+    </Controls:StackPanel>
+
+     
+</UserControl>

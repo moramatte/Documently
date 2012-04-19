@@ -121,6 +121,7 @@
     <Compile Include="ApplicationFramework\Converters\CollapsedWhenNullConverter.cs" />
     <Compile Include="ApplicationFramework\ScreenWithValidatingCommand.cs" />
     <Compile Include="ApplicationFramework\ValidatingCommand.cs" />
+    <Compile Include="Commands\CreateDocumentMetaData.cs" />
     <Compile Include="CommandValidation\RelocateTheCustomerValidator.cs" />
     <Compile Include="Infrastructure\Installers\ValidatorInstaller.cs" />
     <Compile Include="Infrastructure\Installers\ViewModelInstaller.cs" />
@@ -156,6 +157,12 @@
       <DependentUpon>ShellView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Modules\Shell\ShellViewModel.cs" />
+    <Compile Include="Shared\FlippingKey.xaml.cs">
+      <DependentUpon>FlippingKey.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Shared\VirtualKeyboard.xaml.cs">
+      <DependentUpon>VirtualKeyboard.xaml</DependentUpon>
+    </Compile>
     <Compile Include="WpfClientBootstrapper.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -214,6 +221,14 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="Modules\Shell\ShellView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Shared\FlippingKey.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Shared\VirtualKeyboard.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
